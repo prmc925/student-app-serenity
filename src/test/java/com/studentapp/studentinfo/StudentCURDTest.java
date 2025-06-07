@@ -18,6 +18,7 @@ import static org.hamcrest.Matchers.hasValue;
 /**
  * Created by Jay
  */
+//@RunWith(SerenityRunner.class)
 public class StudentCURDTest extends TestBase {
 
     static String firstName = TestUtils.getRandomValue() + "PrimeUser";
@@ -28,6 +29,7 @@ public class StudentCURDTest extends TestBase {
     static int studentId;
 
 
+    @Title("This will create a new student")
     @Test
     public void test001(){
         List<String> courseList = new ArrayList<>();
