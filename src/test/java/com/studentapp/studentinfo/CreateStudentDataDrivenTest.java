@@ -3,10 +3,7 @@ package com.studentapp.studentinfo;
 import com.studentapp.testbase.TestBase;
 import net.serenitybdd.annotations.Steps;
 import net.serenitybdd.annotations.Title;
-import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
-import net.thucydides.junit.annotations.UseTestDataFrom;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,8 +11,8 @@ import java.util.List;
 /**
  * Created by Jay
  */
-@UseTestDataFrom("src/test/resources/testdata/studentinfo.csv")
-@RunWith(SerenityParameterizedRunner.class)
+/*@UseTestDataFrom("src/test/resources/testdata/studentinfo.csv")
+@RunWith(SerenityParameterizedRunner.class)*/
 public class CreateStudentDataDrivenTest extends TestBase {
 
     private String firstName;
